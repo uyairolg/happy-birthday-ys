@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Magical Birthday Story</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-container"></div>
+    <audio id="backgroundMusic" loop src="22.mp3"></audio>
+
+    <div class="step active" id="step1">
+        <div class="gift-container" id="giftContainer">
+            <div class="gift-box">
+                <div class="gift-lid"></div>
+                <div class="gift-bow"></div>
+            </div>
+            <p class="instruction-text">A surprise is waiting...</p>
+        </div>
+    </div>
+
+    <div class="step" id="step2">
+        <div class="key-container" id="keyContainer">
+            <svg id="animatedKey" class="key-svg" viewBox="0 0 120 200">
+                <!-- Key head (circular bow) -->
+                <circle cx="60" cy="40" r="28" stroke-width="6" fill="none"/>
+                <circle cx="60" cy="40" r="16" stroke-width="4" fill="none"/>
+                <!-- Key shaft -->
+                <line x1="60" y1="68" x2="60" y2="170" stroke-width="6" stroke-linecap="round"/>
+                <!-- Key teeth -->
+                <line x1="60" y1="140" x2="78" y2="140" stroke-width="5" stroke-linecap="round"/>
+                <line x1="60" y1="155" x2="72" y2="155" stroke-width="5" stroke-linecap="round"/>
+                <line x1="60" y1="170" x2="78" y2="170" stroke-width="5" stroke-linecap="round"/>
+            </svg>
+            <p class="instruction-text">A key to unlock the magic...</p>
+        </div>
+    </div>
+
+    <div class="step" id="step3">
+        <div class="storybook-container" id="storybookContainer">
+            <div class="book">
+                <div class="book-cover" id="bookCover">
+                    <div class="cover-front">
+                        <h2 class="book-title">Chapter 22</h2>
+                    </div>
+                    <div class="cover-back"></div>
+                </div>
+                <div class="page" id="page1">
+                    <div class="page-front">
+                        <p class="page-text">I don't know about you...</p>
+                    </div>
+                    <div class="page-back">
+                        <p class="page-text">But I'm feeling 22 ✨</p>
+                    </div>
+                </div>
+                <div class="page" id="page2">
+                    <div class="page-front">
+                        <p class="page-text">Everything will be alright if you keep me next to you...</p>
+                    </div>
+                    <div class="page-back">
+                        <p class="page-text">Happy 22. 🎂</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="step" id="step5">
+        <div class="finale-page">
+            <div class="finale-container">
+                <div class="finale-card">
+                    <svg class="floral-svg" viewBox="0 0 400 400">
+                        <path id="vine1" d="M10,200 C40,100 150,100 200,200 S360,300 390,200" />
+                        <path id="vine2" d="M10,210 C40,310 150,310 200,210 S360,110 390,210" />
+                    </svg>
+                    <h1 class="finale-greeting">Happy Birthday</h1>
+                    <h2 class="finale-name">友善</h2>
+                    <p class="finale-wish">Happy 22.</p>
+                </div>
+            </div>
+            <div class="gallery-container">
+                <h2 class="gallery-title">Memories</h2>
+                <div class="gallery-scroll">
+                    <div class="gallery-item"><img src="photos/Pictures/DSCF0864.JPG" alt="memory"></div>
+                    <div class="gallery-item"><img src="photos/Pictures/DSCF0907.JPG" alt="memory"></div>
+                    <div class="gallery-item"><img src="photos/Pictures/DSCF1225.JPG" alt="memory"></div>
+                    <div class="gallery-item"><img src="photos/Pictures/DSCF1242.JPG" alt="memory"></div>
+                    <div class="gallery-item"><img src="photos/Pictures/DSCF3109.JPG" alt="memory"></div>
+                    <div class="gallery-item"><img src="photos/Pictures/DSCF3114.JPG" alt="memory"></div>
+                    <div class="gallery-item"><img src="photos/Pictures/DSCF3131.JPG" alt="memory"></div>
+                    <div class="gallery-item"><img src="photos/Pictures/DSCF3161.JPG" alt="memory"></div>
+                    <div class="gallery-item"><img src="photos/Pictures/DSCF3672.JPG" alt="memory"></div>
+                    <div class="gallery-item"><img src="photos/Pictures/IMG_0313.JPG" alt="memory"></div>
+                    <div class="gallery-item"><img src="photos/Pictures/IMG_1979.JPG" alt="memory"></div>
+                    <div class="gallery-item"><img src="photos/Pictures/IMG_2668.JPG" alt="memory"></div>
+                    <div class="gallery-item"><img src="photos/Pictures/IMG_4588.JPG" alt="memory"></div>
+                    <div class="gallery-item"><img src="photos/Pictures/IMG_5330.JPG" alt="memory"></div>
+                    <div class="gallery-item"><img src="photos/Pictures/IMG_5662.JPG" alt="memory"></div>
+                    <div class="gallery-item"><img src="photos/Pictures/IMG_6867.JPG" alt="memory"></div>
+                    <div class="gallery-item"><img src="photos/Pictures/IMG_6912.JPG" alt="memory"></div>
+                    <div class="gallery-item"><img src="photos/Pictures/IMG_7189.JPG" alt="memory"></div>
+                    <div class="gallery-item"><img src="photos/Pictures/IMG_7634.JPG" alt="memory"></div>
+                </div>
+            </div>
+            <p class="back-link" id="replayBtn">&larr; Back</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
