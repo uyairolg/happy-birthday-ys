@@ -132,11 +132,10 @@ body {
     width: 350px;
     height: 280px;
     position: relative;
-    transition: margin-left 1s ease-in-out;
-    margin-left: 0;
+    transition: transform 1s ease-in-out;
 }
 .book.opened {
-    margin-left: 350px;
+    transform: translateX(175px);
 }
 
 /* Cover: closed state sits on top, hides pages */
@@ -375,7 +374,7 @@ body {
     .key-svg { width: 120px; height: 200px; }
 
     .book { width: 140px; height: 200px; }
-    .book.opened { margin-left: 140px; }
+    .book.opened { transform: translateX(70px); }
     .book-title { font-size: 1.6rem; padding: 8px 14px; }
     .page-text { font-size: 1rem; }
     .page-front, .page-back { padding: 20px; }
@@ -400,7 +399,7 @@ body {
     .gift-bow::after { left: 85px; }
 
     .book { width: 120px; height: 180px; }
-    .book.opened { margin-left: 120px; }
+    .book.opened { transform: translateX(60px); }
     .book-title { font-size: 1.3rem; padding: 6px 12px; }
     .page-text { font-size: 0.9rem; }
     .page-front, .page-back { padding: 15px; }
